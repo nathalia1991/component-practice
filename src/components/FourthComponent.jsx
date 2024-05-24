@@ -29,6 +29,15 @@ export const FourthComponent = () => {
      console.log(`Has ${action}  la caja`);
    }
 
+   //onFocus
+   const insideInput=(e)=>{
+     console.log(`Estas dentro del input, escribe tu nombre`)
+   }
+
+   //onBlur, se puede usar para requisito paraque no deje avanzar hasta qu eno lo rellene
+   const outsideInput=(e)=>{
+     console.log(`Estas fuera del input, Adios`)
+   }
 
   return (
     <div>
@@ -43,13 +52,13 @@ export const FourthComponent = () => {
           <button onClick={ handleClicked }>Aquí también haz Click!!</button>
         </div>
 
-      {/* Evento Doble Click */}
+          {/* Evento Doble Click */}
           <div>
                <button onDoubleClick={handleDoubleClicked}>Haz doble click!!</button>        
           </div>
 
-        {/* Evento Mouse Enter y Mouse Leave */}
-        <hr />
+          {/* Evento Mouse Enter y Mouse Leave */}
+          <hr />
           <div id='box'>
           <div id="box1"
                onMouseEnter={handleMouseEnter}
@@ -74,8 +83,14 @@ export const FourthComponent = () => {
 
           </div>
           
-
         {/* Evento Focus y Blur */}
+        <div className='mt-4'>
+          <input type="text" 
+          onFocus={insideInput}
+          onBlur={outsideInput}
+          placeholder='Escribe tu nombre'
+          />
+          </div>
 
     </div>
   )
