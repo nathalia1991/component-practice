@@ -10,6 +10,26 @@ export const FourthComponent = () => {
      alert("Has hecho doble click al botón");
   }
 
+    //MouseLeave and MouseEnter Con dos funciones
+  const handleMouseEnter = (e) => {
+     console.log("Has entrado a mi caja con el Mouse!! ")
+   }
+ 
+   const handleMouseLeave = (e) => {
+     console.log("Has salido de mi caja!! ")
+   }
+
+   // onMouseEnter y onMouseLeave con una sola función con Alert
+  const handleMouse = (e, action) => {
+     alert(`Has ${action}  la caja`);
+   }
+ 
+   // onMouseEnter y onMouseLeave con una sola función con  Console Log
+   const handleMouseCl = (e, action) => {
+     console.log(`Has ${action}  la caja`);
+   }
+
+
   return (
     <div>
         <h2>Eventos en React</h2>
@@ -29,6 +49,32 @@ export const FourthComponent = () => {
           </div>
 
         {/* Evento Mouse Enter y Mouse Leave */}
+        <hr />
+          <div id='box'>
+          <div id="box1"
+               onMouseEnter={handleMouseEnter}
+               onMouseLeave={handleMouseLeave}
+          >
+          <p>Pasa el mouse por encima!!</p>
+          </div>
+
+          <div id="box2"
+               onMouseEnter={e=>handleMouse(e, "entrado a")}
+               onMouseLeave={e=>handleMouse(e, "salido de")}
+          >
+          <p>Pasa el mouse por encima!!</p>
+          </div>
+
+           <div id="box3"
+               onMouseEnter={e=>handleMouseCl(e, "entrado a")}
+               onMouseLeave={e=>handleMouseCl(e, "salido de")}
+          >
+          <p>Pasa el mouse por encima!!</p>
+          </div>
+
+          </div>
+          
+
         {/* Evento Focus y Blur */}
 
     </div>
