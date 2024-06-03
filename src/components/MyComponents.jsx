@@ -2,8 +2,8 @@ import React from 'react'
 
 export const MyComponents = () => {
 
-     const name= "NATHALIA";
-     const repository= "https://github.com/nathalia1991";
+     const name= "INES MARIA OLIVEROS";
+     const repository= "https://github.com/inesmariao";
 
      const student = {
      name: "Silvia Nathalia",
@@ -24,7 +24,7 @@ export const MyComponents = () => {
           <li>Comunicacion</li>
       </ul>
       <hr />
-      
+
       <h2>Datos del docente</h2>
       <p>Nombre: { name }</p>
       <p>Repositorio:</p>
