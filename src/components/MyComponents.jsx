@@ -6,10 +6,10 @@ export const MyComponents = () => {
      const repository= "https://github.com/nathalia1991";
 
      const student = {
-     name: "Carlos",
-     lastName: "Caro",
-     mobile: "30000000",
-     linkedinProfile: "https://www.linkedin.com/in/carlos-caro"
+     name: "Silvia Nathalia",
+     lastName: "Camacho Jaimes",
+     mobile: "3015432100",
+     linkedinProfile: "https://www.linkedin.com/in/silvia-nathalia-camacho-jaimes-828079b8/"
      }
 
   return (
@@ -24,6 +24,7 @@ export const MyComponents = () => {
           <li>Comunicacion</li>
       </ul>
       <hr />
+      
       <h2>Datos del docente</h2>
       <p>Nombre: { name }</p>
       <p>Repositorio:</p>
